@@ -139,10 +139,11 @@ const List = () => {
           <button
             onClick={() => {
               const _result = findDuplicateNumbers(myArray);
+              console.log("hasil di dup", _result);
               setResult({
                 question:
                   "Cari anggota dari Inputan / Variable Himpunan Bilangan Asli dengan nilai angka sama dan lebih dari satu = ",
-                value: _result,
+                value: `${_result[0]} dan ${_result[1]}`,
               });
             }}
           >
